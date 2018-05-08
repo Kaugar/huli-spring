@@ -5,7 +5,8 @@ spring:
         hibernate:
             ddl-auto: update
     datasource:
-        url: jdbc:mysql://hulispring-mysql:3306/demo
-        username: user
-        password: pass
+        url: ${DATABASE_URL}
+        username: ${DATABASE_USER}
+        password: ${DATABASE_PASSWORD}
         driver-class-name: com.mysql.jdbc.Driver
+        continue-on-error: true
