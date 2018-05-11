@@ -17,12 +17,35 @@ provided it has 64bit architecture and OS, et least 4GB (**8GB is recomended**) 
 ```
 docker pull huli/gradle
 ```
+### Clone the github repository
+
+https://github.com/greenfox-academy/devops/huli-spring
+
 ### run the sample app
 Go inside the folder of the demo and run:
 ```
-docker compose-up -t
+docker-compose up -d
+```
+Check your running conatiners with
+```
+docker ps
+```
+Step in your running gradle-container
+```
+docker exec -it gradle-container /bin/bash
+```
+Step into the sample application
+```
+cd huli-spring
+```
+Run the tests
+```
+./gradlew test
+```
+Run the app
+```
+./gradlew bootRun
 ```
 
-Now start all the container with:
-```
-./start.sh
+Now you can reach the RestApi at http://localhost:8080/hello
+
