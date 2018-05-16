@@ -8,10 +8,14 @@ docker run --name ${baseName}-mysql \
               -d \
               ${baseName}-mysql
 
-docker stop ${baseName}-web
-docker rm ${baseName}-web
-docker run --name ${baseName}-web \
+#-v /Users/martinweltler/Desktop/greenfox/docker-project:/root/ \
+docker stop gradle-spring
+docker rm gradle-spring
+docker run --name gradle-spring \
               -p 8080:8080 \
+              -e DATABASE_URL='jdbc:mysql://hulispring-mysql:3306/demo' \
+              -e DATABASE_USER='user' \
+              -e DATABASE_PASSWORD='pass' \
               --link ${baseName}-mysql:mysql \
               -t \
-              ${baseName}-web
+              gradle-spring
