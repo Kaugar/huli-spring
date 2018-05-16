@@ -43,10 +43,6 @@ tasks.withType(Test) {
 	scanForTestClasses = false
 	include "**/*Test.class" // whatever Ant pattern matches your test class files
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> 0f54707e5384e15036fce23fa85d33118bea3ffc
 
 task writeClasspath {
 	//buildDir.mkdirs()
