@@ -48,3 +48,5 @@ Run the app
 ```
 
 Now you can reach the RestApi at http://localhost:8080/hello
+
+try
