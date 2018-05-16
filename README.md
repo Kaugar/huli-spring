@@ -49,4 +49,8 @@ Run the app
 
 Now you can reach the RestApi at http://localhost:8080/hello
 
+<<<<<<< HEAD
 In the cloned diretory on your machine you can reach the project files, you can open it with an editor and it will refresh your applicion the container.
+=======
+### In the cloned diretory on your machine you can reach the project files, you can open it with an editor and it will refresh your applicion the container.
+>>>>>>> 0f54707e5384e15036fce23fa85d33118bea3ffc
